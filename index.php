@@ -13,14 +13,24 @@
 </body>
 </html>
 <?php
-
+//print any errors
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
+//include the functions file
 include ("functions.php");
+
+//initialize array with numbers
 $numbers = array(7,9,8,9,8,8,6);
 
+//call the function printArr
 printArr($numbers);
+
+//echo an empty line
+echo "<br>";
+
+//call and print the largest function
+echo largest($numbers);
 
 
 
