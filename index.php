@@ -17,14 +17,7 @@
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
-function printArr($array)
-{
-    foreach($array as $value)
-    {
-        echo $value . " ";
-    }
-}
-
+include ("functions.php");
 $numbers = array(7,9,8,9,8,8,6);
 
 printArr($numbers);
