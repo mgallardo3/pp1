@@ -11,7 +11,7 @@ function printArr($array)
 {
     foreach($array as $value)
     {
-        echo $value . " ";
+        echo $value .  ' ';
     }
 }
 
@@ -29,3 +29,13 @@ function largest($array)
     return $current;
 }
 
+//This function returns the average number in an array
+function average($array)
+{
+    $number = 0;
+    foreach($array as $value)
+    {
+        $number += $value;
+    }
+    return $number / sizeof($array);
+}
