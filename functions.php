@@ -11,7 +11,7 @@ function printArr($array)
 {
     foreach($array as $value)
     {
-        echo $value .  ' ';
+        echo $value;
     }
 }
 
@@ -38,4 +38,27 @@ function average($array)
         $number += $value;
     }
     return $number / sizeof($array);
+}
+
+function removeDups($array)
+{
+//    for ($i = 0; $i <sizeof($array); $i++)
+//    {
+//        $number = $array[$i];
+//        for($j =($i+1); $j <sizeof($array); $j++)
+//        {
+//            if($array[$j]== $number)
+//            {
+//                unset($array[$i]);
+//            }
+//        }
+//    }
+    //return $array;
+    return array_unique($array);
+
+}
+
+function distribution()
+{
+
 }
