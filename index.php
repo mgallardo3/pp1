@@ -26,11 +26,17 @@ $numbers = array(7,9,8,9,8,8,6);
 //call the function printArr
 printArr($numbers);
 
-//echo an empty line
-echo "<br>";
-
 //call and print the largest function
-echo largest($numbers);
+echo '<br>Largest: '.largest($numbers);
 
+//call and print the function average
+echo '<br> Average: '.average($numbers);
 
+//call and print the function removeDups
+echo '<br>';
+var_dump(removeDups($numbers));
 
+//call and print the function distribution
+echo '<br>';
+echo '<br>';
+var_dump(distribution($numbers));
