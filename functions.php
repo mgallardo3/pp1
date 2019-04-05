@@ -58,7 +58,33 @@ function removeDups($array)
 
 }
 
-function distribution()
+function distribution($array)
 {
+    $keys = array();
+    //$newArray = removeDups($array);
+    //$newArray = sort($newArray);
+    $newArray = array(6,9,7,8);
 
+    foreach($newArray as $number)
+    {
+        $counter= 0;
+        foreach($array as $number2)
+        {
+            if($number==$number2)
+            {
+                $counter++;
+            }
+        }
+        $keys [] = $counter;
+    }
+//    for($i=0; $i< sizeof($newArray); $i++)
+//    {
+//        $finalArray[$newArray[$i]]=$keys[$i];
+//    }
+
+    foreach($newArray as $key => $value)
+    {
+        $finalArray[$value] = $keys[$key];
+    }
+    return $finalArray;
 }
